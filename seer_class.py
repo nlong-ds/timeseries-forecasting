@@ -6,12 +6,10 @@ The fundamental method is test_model.
 import pandas as pd
 from fbprophet import Prophet
 from fbprophet.plot import plot_plotly
-from fbprophet.diagnostics import  performance_metrics,cross_validation
-from fbprophet.plot import add_changepoints_to_plot
 import plotly.offline as py
 
 
-class seer():
+class Seer:
     
     def merge_forecast(self, actual, forecast):
         output = pd.merge(left = actual, 
