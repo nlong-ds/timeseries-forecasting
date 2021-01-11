@@ -1,8 +1,3 @@
-'''
-A support class used to quickly test multiple options with Prophet.
-The fundamental method is test_model.
-'''
-
 import pandas as pd
 from fbprophet import Prophet
 from fbprophet.plot import plot_plotly
@@ -10,6 +5,10 @@ import plotly.offline as py
 
 
 class Seer:
+    '''
+    A support class used to quickly test multiple options with Prophet.
+    The fundamental method is test_model.
+    '''
     
     def merge_forecast(self, actual, forecast):
         output = pd.merge(left = actual, 
